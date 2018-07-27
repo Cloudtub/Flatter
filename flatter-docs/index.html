@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <title>Flatter documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="abhishek gahlot">
+
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+    <style type="text/css">
+    @import "http://fonts.googleapis.com/css?family=Fanwood+Text:400,400italic";
+body {
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+a.brand{
+	font-family: 'Fanwood Text', serif;
+	font-style: italic;
+}
+
+</style>
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    </head>
+
+<body data-spy="scroll" id="top">
+
+<!-- Documentation Navbar -->
+
+<div class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
+	<a class="brand" href="#">flatter</a> <!-- TIP: Change this for the name of your file -->
+     	<div class="nav-collapse">
+        <ul class="nav">
+              <li><a href="#top" class="active">Top</a></li>
+              <li><a href="#markup">Markup</a></li>
+              <li><a href="#styles">Styles</a></li>
+              <li><a href="#javascript">JavaScript</a></li>
+              <li><a href="#credits">Credits</a></li>
+          </ul>
+</div>
+	</div>
+		</div>
+			</div> <!-- End of Navbar -->
+
+<!-- Main Container Beginning -->
+
+<div class="container">
+
+	<div class="masthead">
+	    <h1>Flatter Documentation</h1>
+	    <p>flatter is mobile first flat webapp theme.</p>
+	    <p class="download-info"> <a href="mailto:me@abhishek.it" class="btn btn-primary btn-large">Item Support</a> </p>
+	</div> <!-- masthead -->
+
+   <div id="intro">
+    <p class="highlight hero-unit">Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to contact me at <strong>me@abhishek.it</strong> Thanks so much!</p>
+  </div> <!-- intro -->
+
+<section id="markup">
+	<div class="page-header">
+	  <h1>Markup <small>Markup customization and highlights</small></h1>
+	</div>
+
+
+
+
+    <hr />
+
+    <div class="row">
+    	<div class="span12">
+	    	<h3>General markup</h3>
+        <p> The general template structure is the same throughout the template which includes Navigation bar , sidebar and main wrapper</p>
+    	</div>
+    </div>
+     <hr />
+     <div class="row">
+      <div class="span3">
+        <h3>Header markup</h3>
+       </div>
+
+<div class="span9">
+<pre class="prettyprint linenums">
+&lt;header class=&quot;navbar main-header&quot; &gt;
+  &lt;a class=&quot;navbar-brand&quot; href=&quot;index.html&quot;&gt;
+    flatter
+  &lt;/a&gt;
+
+  &lt;ul class=&quot;nav navbar-nav navbar-left sidebar-toggle-ul&quot;&gt;
+    &lt;li class=&quot;navbar-main hidden-lg hidden-md&quot;&gt;
+      &lt;a href=&quot;javascript:void(0);&quot; id=&quot;sidebar-toggle&quot;&gt;
+        &lt;span class=&quot;meta&quot;&gt;
+          &lt;span class=&quot;icon&quot;&gt;
+            &lt;i class=&quot;fa fa-bars&quot;&gt;
+            &lt;/i&gt;
+          &lt;/span&gt;
+        &lt;/span&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;ul class=&quot;nav navbar-nav navbar-left&quot;&gt;
+    &lt;li class=&quot;navbar-main hidden-sm hidden-xs&quot;&gt;
+      &lt;a href=&quot;javascript:void(0);&quot; id=&quot;sidebar-collapse&quot;&gt;
+        &lt;span class=&quot;meta&quot;&gt;
+          &lt;span class=&quot;icon&quot;&gt;
+            &lt;i class=&quot;fa fa-outdent&quot;&gt;
+            &lt;/i&gt;
+          &lt;/span&gt;
+        &lt;/span&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/header&gt;
+
+</pre>
+      </div>
+        </div>
+
+    <hr />
+
+
+<div class="row">
+    <div class="span3">
+  <h3>Sidebar basic Markup</h3>
+
+</div>
+
+<div class="span9">
+<pre class="prettyprint linenums">
+&lt;div class=&quot;sidebar sidebar-left&quot;&gt;
+  &lt;div class=&quot;content&quot;&gt;
+    &lt;ul class=&quot;nav nav-tabs nav-justified sidetabs&quot;&gt;
+      &lt;li class=&quot;active&quot;&gt;
+        &lt;a href=&quot;#home&quot; data-toggle=&quot;tab&quot; &gt;
+          &lt;i class=&quot;fa fa-compass&quot;&gt;
+          &lt;/i&gt;
+
+        &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href=&quot;#users&quot; data-toggle=&quot;tab&quot;&gt;
+          &lt;i class=&quot;fa fa-user&quot;&gt;
+          &lt;/i&gt;
+
+        &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href=&quot;#email&quot; data-toggle=&quot;tab&quot;&gt;
+          &lt;i class=&quot;fa fa-envelope-o&quot;&gt;
+          &lt;/i&gt;
+        &lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;div class=&quot;tab-content sidetabs&quot;&gt;
+      &lt;div class=&quot;tab-pane active&quot; id=&quot;home&quot;&gt;
+        &lt;ul class=&quot;sidemenu&quot;&gt;
+          &lt;li class=&quot;sidebar-header&quot;&gt;
+            Home
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;a href=&quot;index.html&quot;&gt;
+              &lt;span class=&quot;icon&quot;&gt;
+                &lt;i class=&quot;fa fa-dashboard&quot;&gt;
+                &lt;/i&gt;
+              &lt;/span&gt;
+              &lt;span class=&quot;name&quot;&gt;
+                Dashboard
+              &lt;/span&gt;
+              &lt;span class=&quot;number pull-right&quot;&gt;
+                &lt;span class=&quot;label label-primary&quot;&gt;
+                  5
+                &lt;/span&gt;
+              &lt;/span&gt;
+            &lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;tab-pane&quot; id=&quot;users&quot;&gt;
+        &lt;ul class=&quot;sidemenu&quot;&gt;
+          &lt;li&gt;
+            ...
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;tab-pane&quot; id=&quot;email&quot;&gt;
+        &lt;ul class=&quot;sidemenu&quot;&gt;
+          &lt;li&gt;
+            ...
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+      </div>
+        </div>
+  </section> <!-- Markup -->
+
+
+<section id="styles">
+    <div class="page-header">
+       <h1>Styles <small>Styles customization and highlights</small></h1>
+     </div>
+
+ <div class="row">
+    <div class="span3">
+  <h3>Stylesheets</h3>
+  <p>Please note i have used break tags at some places to avoid mixing elements. They are just for theme purpose only. You should avoid in production.</p>
+  <p>Here's a list of the stylesheet files I'm using with this template, you can find more information opening each file:</p>
+</div>
+<div class="span9">
+        <table class="table table-bordered table-striped">
+              <thead>
+            <tr>
+                  <th>File Name</th>
+                  <th>Description</th>
+                </tr>
+          </thead>
+              <tbody>
+            <tr>
+                  <td><code>bootstrap-override.css</code></td>
+                  <td>Bootstrap styles are changed from default in this.</td>
+                </tr>
+            <tr>
+                  <td><code>layout.css</code></td>
+                  <td>This is layout file for basic theme usage and includes sidebar & header css.</td>
+                </tr>
+            <tr>
+                  <td><code>library.css</code></td>
+                  <td>Libraries which are used in this theme are overridden here.</td>
+                </tr>
+                <tr>
+                  <td><code>style.css</code></td>
+                  <td>This is main file and css for pages,background,widgets are in this file.</td>
+                </tr>
+          </tbody>
+            </table>
+      </div>
+        </div>
+    <hr />
+    <div class="row">
+	<div class="span3">
+	   <h3>CSS Structure</h3>
+	</div>
+
+<div class="span9">
+<pre class="prettyprint linenums">
+/* Header Section */
+
+some code
+
+
+/* Sidebar Section */
+
+some code
+
+					</pre>
+      </div>
+        </div>
+  </section>
+      <!-- Styles -->
+
+      <section id="javascript">
+	<div class="page-header">
+	  <h1>JavaScript <small>JavaScript customization and highlights</small></h1>
+	</div>
+	<div class="row">
+	  <div class="span3">
+	    <h3>JavaScript Files</h3>
+
+	  </div>
+	  <div class="span9">
+	    <table class="table table-bordered table-striped">
+	      <thead>
+	        <tr>
+	          <th>Tag</th>
+	          <th>Description</th>
+	        </tr>
+	      </thead>
+	      <tbody>
+	      	<tr>
+	          <td><code>bootstrap.js</code></td>
+	          <td>Javascript code to support bootstrap 3 components.</td>
+	        </tr>
+	        <tr>
+	          <td><code>jquery-1.11.0.min.js</code></td>
+	          <td>jQuery is a Javascript library that greatly reduces the amount of code that you must write.</td>
+	        </tr>
+	        <tr>
+	          <td><code>script.js</code></td>
+	          <td>Javascript code which is common on all pages.</td>
+	        </tr>
+	      </tbody>
+	    </table>
+	  </div>
+	</div>
+
+  </section><!-- JavaScript -->
+
+
+
+
+	<section id="credits">
+	  <div class="page-header">
+	    <h1>Credits Files <small>Credits and sources</small></h1>
+	  </div>
+	  <p>I've used the following javascript libraries & images.</p>
+	  <h3>JavaScript</h3>
+	  <ol>
+	    <li><a href="http://jquery.com/">jQuery 1.11.0</a></li>
+	    <li><a href="http://fabien-d.github.io/alertify.js/">Alertify</a></li>
+	    <li><a href="http://blueimp.github.io/Bootstrap-Image-Gallery/">Bootstrap image gallery</a></li>
+	    <li><a href="http://vitalets.github.io/x-editable/">X-editable</a></li>
+	    <li><a href="http://c3js.org">c3js</a></li>
+	    <li><a href="http://www.chartjs.org/">chartjs</a></li>
+	    <li><a href="http://mjolnic.github.io/bootstrap-colorpicker/">Colorpicker</a></li>
+	    <li><a href="http://manos.malihu.gr/tuts/jquery_custom_scrollbar.html">Custom scrollbar</a></li>
+	    <li><a href="https://github.com/codrops/Calendario/">Calendario</a></li>
+	    <li><a href="http://datatables.net/">Datatables</a></li>
+	    <li><a href="http://www.eyecon.ro/bootstrap-datepicker">Datepicker</a></li>
+	    <li><a href="http://www.dropzonejs.com/">Dropzone</a></li>
+	    <li><a href="http://rendro.github.io/easy-pie-chart/">Easypie chart</a></li>
+	    <li><a href="http://jasny.github.io/bootstrap/javascript/">File input</a></li>
+	    <li><a href="http://www.flotcharts.org/">Flot charts</a></li>
+	    <li><a href="http://jqueryvalidation.org/">Jquery validation</a></li>
+	    <li><a href="http://exacttarget.github.io/fuelux/">Fuelux</a></li>
+	    <li><a href="http://arshaw.com/fullcalendar/">Full calendar</a></li>
+	    <li><a href="http://hpneo.github.io/gmaps/">Gmaps</a></li>
+	    <li><a href="http://fronteed.com/iCheck/">iCheck</a></li>
+	    <li><a href="http://blueimp.github.io/jQuery-File-Upload/">Jquery fileupload</a></li>
+	    <li><a href="http://jvectormap.com/">Jquery vector map</a></li>
+	    <li><a href="https://jqueryui.com/">Jquery UI</a></li>
+	    <li><a href="http://jasny.github.io/bootstrap/javascript/">Mask-input</a></li>
+	    <li><a href="http://github.hubspot.com/messenger/">Messenger</a></li>
+	    <li><a href="http://morrisjs.github.io/morris.js/">Morrisjs</a></li>
+	    <li><a href="http://github.hubspot.com/offline/">OfflineJS</a></li>
+	    <li><a href="http://ivaynberg.github.io/select2/">Select2</a></li>
+	    <li><a href="http://abpetkov.github.io/switchery/">Switchery</a></li>
+	    <li><a href="http://jdewit.github.io/bootstrap-timepicker/">Timepicker</a></li>
+	    <li><a href="http://erikflowers.github.io/weather-icons/">Weather-icons</a></li>
+	    <li><a href="http://morrisjs.github.io/morris.js/">WYSIWYG</a></li>
+	  </ol>
+
+	  <h3>Images</h3>
+	  <ol>
+	    <li><a href="https://www.flickr.com/photos/best_photo/"> 2361332172_e815ff2c24_b.jpg</a></li>
+
+<li><a href="https://www.flickr.com/photos/hortulus_aptus/"> 2327856742_55ba26cf3b_b.jpg</a></li>
+
+<li><a href="https://www.flickr.com/photos/john47kent/">  3392120990_45ccfe079d_b.jpg</a></li>
+
+<li><a href="https://www.flickr.com/photos/davidchief/">  1306006614_75557f5bf3_b.jpg</a></li>
+
+<li><a href="https://www.flickr.com/photos/neilarmstrong2/">  5507804959_c27b432533_b.jpg</a></li>
+
+<li><a href="https://www.flickr.com/photos/mhl20/"> 6327912517_2a1d045848_b.jpg</a></li>
+
+<li><a href="https://www.flickr.com/photos/bobszinkler87/"> 5400169643_7533fbb6b2_b.jpg</a></li>
+
+<li><a href="https://www.flickr.com/photos/ksr8s/">  5693672151_fede1117eb_b.jpg</a></li>
+
+<li><a href="https://www.flickr.com/photos/horneefterskole/">  13993462534_731e81a9a6_b</a></li>
+
+<li><a href="https://www.flickr.com/photos/horneefterskole/">  13969780096_5080da7235_b.jpg</a></li>
+
+<li><a href="https://www.flickr.com/photos/kentparaiso/">   324306846_9b795f5f87_b.jpg</a></li>
+
+<li><a href="https://www.flickr.com/photos/84263554@N00/">  3732756360_a82c568259_b.jpg</a></li>
+
+<li><a href="https://www.flickr.com/photos/tonythemisfit/">  4962313241_c3e6084854_b.jpg</a></li>
+	  </ol>
+	</section><!-- Credits -->
+
+
+
+<br>
+<div class="goodbye">
+    <p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist.</p>
+  </div>
+
+      <hr />
+
+<footer>
+    <p>&copy; flatter 2014</p>
+</footer>
+
+</div><!-- /container -->
+
+<!-- Le javascript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/scripts.js"></script>
+<script src="assets/js/google-code-prettify/prettify.js"></script>
+<script src="assets/js/bootstrap-transition.js"></script>
+<script src="assets/js/bootstrap-alert.js"></script>
+<script src="assets/js/bootstrap-modal.js"></script>
+<script src="assets/js/bootstrap-dropdown.js"></script>
+<script src="assets/js/bootstrap-scrollspy.js"></script>
+<script src="assets/js/bootstrap-tab.js"></script>
+<script src="assets/js/bootstrap-tooltip.js"></script>
+<script src="assets/js/bootstrap-popover.js"></script>
+<script src="assets/js/bootstrap-button.js"></script>
+<script src="assets/js/bootstrap-collapse.js"></script>
+</body>
+</html>
